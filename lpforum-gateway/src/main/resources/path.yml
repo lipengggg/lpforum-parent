@@ -1,0 +1,15 @@
+#匹配URL进行分发路由
+spring:
+  profiles:
+    active: path_route
+---
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: path_route
+        uri: http://httpbin.org:80/get
+        predicates:
+        - Path=/foo/{segment}
+  profiles: path_route
+

@@ -1,0 +1,17 @@
+#通过匹配请求方式分发路由
+spring:
+  profiles:
+    active: method_route
+
+---
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: method_route
+        uri: http://httpbin.org:80/get
+        predicates:
+        - Method=GET
+  profiles: method_route
+
+

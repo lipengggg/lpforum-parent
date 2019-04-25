@@ -1,0 +1,17 @@
+#通过请求头匹配分发路由
+spring:
+  profiles:
+    active: header_route
+
+---
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: header_route
+        uri: http://httpbin.org:80/get
+        predicates:
+        - Header=X-Request-Id, \d+
+  profiles: header_route
+
+

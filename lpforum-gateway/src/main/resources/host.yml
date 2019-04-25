@@ -1,0 +1,14 @@
+#通过匹配域名分发路由
+spring:
+  profiles:
+    active: host_route
+---
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: host_route
+        uri: http://httpbin.org:80/get
+        predicates:
+        - Host=**.fangzhipeng.com
+  profiles: host_route
