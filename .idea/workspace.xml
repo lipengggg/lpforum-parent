@@ -2,23 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="681ca0ff-af01-4f2a-bf99-c689129c971c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/abstracts/AbstractBaseData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/abstracts/AbstractExceptionWrapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/annotation/CheckData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/annotation/TransData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/builder/ExceptionInfoBuilder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/entity/ExceptionInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/enums/EnumErrorCode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/enums/EnumErrorType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/exception/LpforumException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/utils/ExceptionHandlerUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lpforum-consumer-user/src/main/java/com/lpforum/lpforumconsumeruser/rest/DemoController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lpforum-gateway/gateway.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lpforum-config-client/src/main/java/com/ylsdd/lpforum/lpforumconfigclient/LpforumConfigClientApplication.java" afterPath="$PROJECT_DIR$/lpforum-config-client/src/main/java/com/lpforum/lpforumconfigclient/LpforumConfigClientApplication.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lpforum-config-client/src/test/java/com/ylsdd/lpforum/lpforumconfigclient/LpforumConfigClientApplicationTests.java" afterPath="$PROJECT_DIR$/lpforum-config-client/src/test/java/com/lpforum/lpforumconfigclient/LpforumConfigClientApplicationTests.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lpforum-config-server/src/main/java/com/ylsdd/lpforum/lpforumconfigserver/LpforumConfigServerApplication.java" afterPath="$PROJECT_DIR$/lpforum-config-server/src/main/java/com/lpforum/lpforumconfigserver/LpforumConfigServerApplication.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lpforum-config-server/src/test/java/com/ylsdd/lpforum/lpforumconfigserver/LpforumConfigServerApplicationTests.java" afterPath="$PROJECT_DIR$/lpforum-config-server/src/test/java/com/lpforum/lpforumconfigserver/LpforumConfigServerApplicationTests.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lpforum-consumer-user/src/main/java/com/ylsdd/lpforum/lpforumconsumeruser/LpforumConsumerUserApplication.java" afterPath="$PROJECT_DIR$/lpforum-consumer-user/src/main/java/com/lpforum/lpforumconsumeruser/LpforumConsumerUserApplication.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lpforum-consumer-user/src/test/java/com/ylsdd/lpforum/lpforumconsumeruser/LpforumConsumerUserApplicationTests.java" afterPath="$PROJECT_DIR$/lpforum-consumer-user/src/test/java/com/lpforum/lpforumconsumeruser/LpforumConsumerUserApplicationTests.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lpforum-eureka-server/src/main/java/com/ylsdd/lpforum/lpforumeurekaserver/LpforumEurekaServerApplication.java" afterPath="$PROJECT_DIR$/lpforum-eureka-server/src/main/java/com/lpforum/lpforumeurekaserver/LpforumEurekaServerApplication.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lpforum-eureka-server/src/test/java/com/ylsdd/lpforum/lpforumeurekaserver/LpforumEurekaServerApplicationTests.java" afterPath="$PROJECT_DIR$/lpforum-eureka-server/src/test/java/com/lpforum/lpforumeurekaserver/LpforumEurekaServerApplicationTests.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lpforum-gateway/src/main/java/com/ylsdd/lpforum/lpforumgateway/LpforumGatewayApplication.java" afterPath="$PROJECT_DIR$/lpforum-gateway/src/main/java/com/lpforum/lpforumgateway/LpforumGatewayApplication.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lpforum-gateway/src/main/java/com/ylsdd/lpforum/lpforumgateway/filter/LogFilter.java" afterPath="$PROJECT_DIR$/lpforum-gateway/src/main/java/com/lpforum/lpforumgateway/filter/LogFilter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lpforum-gateway/src/main/java/com/ylsdd/lpforum/lpforumgateway/filter/RateLimitFilter.java" afterPath="$PROJECT_DIR$/lpforum-gateway/src/main/java/com/lpforum/lpforumgateway/filter/RateLimitFilter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lpforum-gateway/src/main/java/com/ylsdd/lpforum/lpforumgateway/filter/RequestFilter.java" afterPath="$PROJECT_DIR$/lpforum-gateway/src/main/java/com/lpforum/lpforumgateway/filter/RequestFilter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lpforum-gateway/src/main/java/com/ylsdd/lpforum/lpforumgateway/rest/DemoController.java" afterPath="$PROJECT_DIR$/lpforum-gateway/src/main/java/com/lpforum/lpforumgateway/rest/DemoController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lpforum-gateway/src/test/java/com/ylsdd/lpforum/lpforumgateway/LpforumGatewayApplicationTests.java" afterPath="$PROJECT_DIR$/lpforum-gateway/src/test/java/com/lpforum/lpforumgateway/LpforumGatewayApplicationTests.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lpforum-provider-user/src/main/java/com/ylsdd/lpforum/lpforumprovideruser/LpforumProviderUserApplication.java" afterPath="$PROJECT_DIR$/lpforum-provider-user/src/main/java/com/lpforum/lpforumprovideruser/LpforumProviderUserApplication.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lpforum-provider-user/src/test/java/com/ylsdd/lpforum/lpforumprovideruser/LpforumProviderUserApplicationTests.java" afterPath="$PROJECT_DIR$/lpforum-provider-user/src/test/java/com/lpforum/lpforumprovideruser/LpforumProviderUserApplicationTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lpforum-common/lpforum-common.iml" afterPath="$PROJECT_DIR$/lpforum-common/lpforum-common.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lpforum-common/pom.xml" afterPath="$PROJECT_DIR$/lpforum-common/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/abstracts/AbstractThreadContext.java" afterPath="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/abstracts/AbstractThreadContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/utils/ThreadContextStoreUtil.java" afterPath="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/utils/ThreadContextStoreUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lpforum-provider-user/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/lpforum-provider-user/src/main/resources/application.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,34 +39,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="CheckData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/annotation/CheckData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="509">
+              <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TransData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/annotation/TransData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractBaseData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/abstracts/AbstractBaseData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="524">
+              <caret line="99" column="23" lean-forward="false" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lpforum-common/pom.xml">
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+            <state relative-caret-position="478">
+              <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChannelMsgUtil.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/utils/ChannelMsgUtil.java">
+      <file leaf-file-name="ExceptionHandlerUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/utils/ExceptionHandlerUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractThreadContext.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/abstracts/AbstractThreadContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThreadContextStoreUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/utils/ThreadContextStoreUtil.java">
+      <file leaf-file-name="LpforumException.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/exception/LpforumException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+            <state relative-caret-position="308">
+              <caret line="79" column="32" lean-forward="false" selection-start-line="79" selection-start-column="32" selection-end-line="79" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,15 +108,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-            <state />
-          </provider>
+      <file leaf-file-name="EnumErrorCode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/enums/EnumErrorCode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+            <state relative-caret-position="270">
+              <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+              <folding>
+                <element signature="e#1272#1273#0" expanded="true" />
+                <element signature="e#1299#1300#0" expanded="true" />
+                <element signature="e#1337#1338#0" expanded="true" />
+                <element signature="e#1371#1372#0" expanded="true" />
+                <element signature="e#1418#1419#0" expanded="true" />
+                <element signature="e#1450#1451#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EnumErrorType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/enums/EnumErrorType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="412">
+              <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="14" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractExceptionWrapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/abstracts/AbstractExceptionWrapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="11" column="63" lean-forward="false" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,6 +152,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -155,10 +206,25 @@
         <option value="$PROJECT_DIR$/lpforum-gateway/src/main/java/com/ylsdd/lpforum/lpforumgateway/filter/LogFilter.java" />
         <option value="$PROJECT_DIR$/lpforum-gateway/src/main/java/com/ylsdd/lpforum/lpforumgateway/filter/RateLimitFilter.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/lpforum-common/pom.xml" />
-        <option value="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/abstracts/AbstractThreadContext.java" />
-        <option value="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/utils/ThreadContextStoreUtil.java" />
         <option value="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/utils/ChannelMsgUtil.java" />
+        <option value="$PROJECT_DIR$/lpforum-consumer-user/src/main/java/com/lpforum/lpforumconsumeruser/rest/DemoController.java" />
+        <option value="$PROJECT_DIR$/lpforum-provider-user/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/lpforum-gateway/gateway.md" />
+        <option value="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/abstracts/AbstractExceptionWrapper.java" />
+        <option value="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/utils/ThreadContextStoreUtil.java" />
+        <option value="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/abstracts/AbstractThreadContext.java" />
+        <option value="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/entity/ExceptionInfo.java" />
+        <option value="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/builder/ExceptionInfoBuilder.java" />
+        <option value="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/annotation/TransData.java" />
+        <option value="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/utils/StringUtil.java" />
+        <option value="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/annotation/CheckData.java" />
+        <option value="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/exception/ServiceException.java" />
+        <option value="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/exception/LpforumException.java" />
+        <option value="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/enums/EnumErrorType.java" />
+        <option value="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/enums/EnumErrorCode.java" />
+        <option value="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/utils/ExceptionHandlerUtil.java" />
+        <option value="$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/abstracts/AbstractBaseData.java" />
+        <option value="$PROJECT_DIR$/lpforum-common/pom.xml" />
       </list>
     </option>
   </component>
@@ -183,10 +249,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-31" />
-    <option name="y" value="84" />
+    <option name="x" value="528" />
+    <option name="y" value="22" />
     <option name="width" value="1628" />
-    <option name="height" value="1000" />
+    <option name="height" value="989" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -293,361 +359,72 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="lpforum" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
               <item name="lpforum-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-config-client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-config-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-config-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-config-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-config-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="lpforum" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="builder" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-config-client" type="462c0819:PsiDirectoryNode" />
+              <item name="lpforum-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="lpforum" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-config-client" type="462c0819:PsiDirectoryNode" />
+              <item name="lpforum-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="lpforum" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforumconfigclient" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-config-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-config-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-config-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-config-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-config-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforumconfigclient" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-config-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-config-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-config-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-config-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-config-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-config-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-config-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-config-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforumconfigserver" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-consumer-user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-consumer-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-consumer-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-consumer-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-consumer-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-consumer-user" type="462c0819:PsiDirectoryNode" />
+              <item name="lpforum-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="lpforum" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-consumer-user" type="462c0819:PsiDirectoryNode" />
+              <item name="lpforum-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="lpforum" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforumconsumeruser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-consumer-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-consumer-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-consumer-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-consumer-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-consumer-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-consumer-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforumconsumeruser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-eureka-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforumeurekaserver" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
               <item name="lpforum-gateway" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lpforum-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lpforum-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="lpforum-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -667,10 +444,11 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../eureka-apigateway" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wandaph-api-dmp-web-develop-WDPH_M_20190425" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lpforum.common.annotation" />
       <recent name="com.lpforum.common.utils" />
     </key>
   </component>
@@ -686,43 +464,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LpforumGatewayApplication">
-    <configuration name="LpforumConfigClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ylsdd.lpforum.lpforumconfigclient.LpforumConfigClientApplication" />
-      <module name="lpforum-config-client" />
-      <envs />
-    </configuration>
-    <configuration name="LpforumConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ylsdd.lpforum.lpforumconfigserver.LpforumConfigServerApplication" />
-      <module name="lpforum-config-server" />
-      <envs />
-    </configuration>
-    <configuration name="LpforumConsumerUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ylsdd.lpforum.lpforumconsumeruser.LpforumConsumerUserApplication" />
-      <module name="lpforum-consumer-user" />
-      <envs />
-    </configuration>
-    <configuration name="LpforumEurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ylsdd.lpforum.lpforumeurekaserver.LpforumEurekaServerApplication" />
-      <module name="lpforum-eureka-server" />
-      <envs />
-    </configuration>
-    <configuration name="LpforumGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ylsdd.lpforum.lpforumgateway.LpforumGatewayApplication" />
-      <module name="lpforum-gateway" />
-      <envs />
-    </configuration>
-    <configuration name="LpforumProviderUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ylsdd.lpforum.lpforumprovideruser.LpforumProviderUserApplication" />
-      <module name="lpforum-provider-user" />
-      <envs />
-    </configuration>
+  <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -804,14 +546,6 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Spring Boot.LpforumEurekaServerApplication" />
-      <item index="1" class="java.lang.String" itemvalue="Spring Boot.LpforumProviderUserApplication" />
-      <item index="2" class="java.lang.String" itemvalue="Spring Boot.LpforumConsumerUserApplication" />
-      <item index="3" class="java.lang.String" itemvalue="Spring Boot.LpforumGatewayApplication" />
-      <item index="4" class="java.lang.String" itemvalue="Spring Boot.LpforumConfigClientApplication" />
-      <item index="5" class="java.lang.String" itemvalue="Spring Boot.LpforumConfigServerApplication" />
-    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -827,7 +561,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556004501132</updated>
-      <workItem from="1556004543278" duration="35890000" />
+      <workItem from="1556004543278" duration="52150000" />
     </task>
     <task id="LOCAL-00001" summary="我的项目">
       <created>1556158834223</created>
@@ -857,11 +591,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556164055333</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="去掉文件夹">
+      <created>1556171728985</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1556171728985</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35890000" />
+    <option name="totallyTimeSpent" value="52150000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -874,14 +615,14 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3310185" sideWeight="0.50215983" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2149028" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5040276" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2326389" sideWeight="0.49784017" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.030237582" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.03125" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38078704" sideWeight="0.49784017" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29166666" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29103673" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32559395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -934,80 +675,14 @@
     <MESSAGE value="我的项目" />
     <MESSAGE value="日志过滤器" />
     <MESSAGE value="当前线程工具类" />
-    <option name="LAST_COMMIT_MESSAGE" value="当前线程工具类" />
+    <MESSAGE value="去掉文件夹" />
+    <option name="LAST_COMMIT_MESSAGE" value="去掉文件夹" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/soft/apache-maven-3.5.0/maven-repository/com/sun/jersey/contribs/jersey-apache-client4/1.19.1/jersey-apache-client4-1.19.1-sources.jar!/com/sun/jersey/client/apache4/ApacheHttpClient4Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="165" column="60" lean-forward="true" selection-start-line="165" selection-start-column="60" selection-end-line="165" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lpforum-provider-user/src/test/java/com/lpforum/lpforumprovideruser/LpforumProviderUserApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/soft/apache-maven-3.5.0/maven-repository/org/springframework/cloud/spring-cloud-netflix-eureka-client/2.1.1.RELEASE/spring-cloud-netflix-eureka-client-2.1.1.RELEASE.jar!/org/springframework/cloud/netflix/eureka/EurekaInstanceConfigBean.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="25" column="11" lean-forward="true" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lpforum-eureka-server/src/test/java/com/lpforum/lpforumeurekaserver/LpforumEurekaServerApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/soft/apache-maven-3.5.0/maven-repository/org/springframework/cloud/spring-cloud-netflix-eureka-client/2.1.1.RELEASE/spring-cloud-netflix-eureka-client-2.1.1.RELEASE.jar!/org/springframework/cloud/netflix/eureka/EurekaClientConfigBean.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="411" column="16" lean-forward="false" selection-start-line="411" selection-start-column="16" selection-end-line="411" selection-end-column="16" />
-          <folding>
-            <element signature="e#13957#13958#0" expanded="true" />
-            <element signature="e#14001#14002#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/soft/apache-maven-3.5.0/maven-repository/org/springframework/cloud/spring-cloud-netflix-eureka-server/2.1.1.RELEASE/spring-cloud-netflix-eureka-server-2.1.1.RELEASE.jar!/org/springframework/cloud/netflix/eureka/server/EnableEurekaServer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/soft/apache-maven-3.5.0/maven-repository/org/springframework/cloud/spring-cloud-commons/2.1.1.RELEASE/spring-cloud-commons-2.1.1.RELEASE.jar!/org/springframework/cloud/client/circuitbreaker/EnableCircuitBreakerImportSelector.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/soft/apache-maven-3.5.0/maven-repository/org/springframework/cloud/spring-cloud-commons/2.1.1.RELEASE/spring-cloud-commons-2.1.1.RELEASE.jar!/org/springframework/cloud/client/circuitbreaker/EnableCircuitBreaker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/soft/apache-maven-3.5.0/maven-repository/org/springframework/cloud/spring-cloud-commons/2.1.1.RELEASE/spring-cloud-commons-2.1.1.RELEASE.jar!/org/springframework/cloud/client/SpringCloudApplication.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -1048,18 +723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lpforum-provider-user/src/main/java/com/lpforum/lpforumprovideruser/LpforumProviderUserApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#269#270#0" expanded="false" />
-            <element signature="e#341#342#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lpforum-eureka-server/pom.xml">
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
         <state />
@@ -1067,14 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-729">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lpforum-provider-user/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1178,26 +833,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lpforum-gateway/src/main/resources/after.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lpforum-gateway/src/main/java/com/ylsdd/lpforum/lpforumgateway/filter/ReuqestFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="40" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lpforum-gateway/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1285,9 +924,224 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="152">
           <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lpforum-consumer-user/src/main/java/com/lpforum/lpforumconsumeruser/rest/DemoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lpforum-consumer-user/src/main/java/com/lpforum/lpforumconsumeruser/LpforumConsumerUserApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lpforum-provider-user/src/main/java/com/lpforum/lpforumprovideruser/LpforumProviderUserApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="63" lean-forward="true" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lpforum-gateway/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lpforum-provider-user/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lpforum-gateway/src/main/resources/after.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lpforum-gateway/HELP.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="162">
+            <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/utils/ThreadContextStoreUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding>
+            <element signature="e#901#902#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/utils/ChannelMsgUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lpforum-gateway/gateway.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="54">
+            <caret line="2" column="33" lean-forward="false" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/abstracts/AbstractThreadContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/entity/ExceptionInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-79">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/builder/ExceptionInfoBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/annotation/TransData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/utils/StringUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/Character.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="5486" column="26" lean-forward="false" selection-start-line="5486" selection-start-column="26" selection-end-line="5486" selection-end-column="26" />
+          <folding>
+            <element signature="e#190944#190945#0" expanded="true" />
+            <element signature="e#190987#190988#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1857">
+          <caret line="483" column="18" lean-forward="false" selection-start-line="483" selection-start-column="18" selection-end-line="483" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/abstracts/AbstractExceptionWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="11" column="63" lean-forward="false" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/enums/EnumErrorType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/annotation/CheckData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/enums/EnumErrorCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <element signature="e#1272#1273#0" expanded="true" />
+            <element signature="e#1299#1300#0" expanded="true" />
+            <element signature="e#1337#1338#0" expanded="true" />
+            <element signature="e#1371#1372#0" expanded="true" />
+            <element signature="e#1418#1419#0" expanded="true" />
+            <element signature="e#1450#1451#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/utils/ExceptionHandlerUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/abstracts/AbstractBaseData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="99" column="23" lean-forward="false" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1296,37 +1150,19 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        <state relative-caret-position="478">
+          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/abstracts/AbstractThreadContext.java">
+    <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/exception/LpforumException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="308">
+          <caret line="79" column="32" lean-forward="false" selection-start-line="79" selection-start-column="32" selection-end-line="79" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/utils/ThreadContextStoreUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lpforum-common/src/main/java/com/lpforum/common/utils/ChannelMsgUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
