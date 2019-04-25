@@ -1,5 +1,7 @@
 package com.lpforum.common.entity;
 
+import com.lpforum.common.abstracts.AbstractBaseData;
+import com.lpforum.common.annotation.CheckData;
 import com.lpforum.common.enums.EnumErrorType;
 
 /**
@@ -7,12 +9,14 @@ import com.lpforum.common.enums.EnumErrorType;
  * @author lipeng
  * @version Id: ExceptionInfo.java, v 0.1 2019/4/25 16:11 lipeng Exp $$
  */
-public class ExceptionInfo {
+public class ExceptionInfo{
     /** 错误码 **/
+    @CheckData(mustIsNumber = true,mustNotEmpty = true)
     private String errorCode;
     /** 错误类型 **/
     private EnumErrorType errorType;
     /** 租户号 **/
+    @CheckData(mustNotEmpty = true)
     private String tenantNo;
     /** 模块名称 **/
     private String moduleName;

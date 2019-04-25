@@ -3,6 +3,9 @@ package com.lpforum.common.builder;
 import com.google.common.base.Objects;
 import com.lpforum.common.entity.ExceptionInfo;
 import com.lpforum.common.enums.EnumErrorType;
+import net.sf.oval.ConstraintViolation;
+
+import java.util.List;
 
 /**
  *异常信息建造类
@@ -45,12 +48,13 @@ public class ExceptionInfoBuilder {
     }
 
     public ExceptionInfo builder() {
-        List<ConstraintViolation> list = CheckUtil.getInstance().check(this.exceptionInfo).checkOver();
-        String info = CheckUtil.getInstance().check(this.exceptionInfo).checkOverReturnStr();
-        if (!Objects.equal((Object)null, list) && !Objects.equal(Integer.valueOf(0), list.size())) {
-            throw new NullPointerException(info);
-        } else {
-            return this.exceptionInfo;
-        }
+//        List<ConstraintViolation> list = CheckU.getInstance().check(this.exceptionInfo).checkOver();
+//        String info = CheckUtil.getInstance().check(this.exceptionInfo).checkOverReturnStr();
+//        if (!Objects.equal((Object)null, list) && !Objects.equal(Integer.valueOf(0), list.size())) {
+//            throw new NullPointerException(info);
+//        } else {
+//            return this.exceptionInfo;
+//        }
+        return this.exceptionInfo;
     }
 }

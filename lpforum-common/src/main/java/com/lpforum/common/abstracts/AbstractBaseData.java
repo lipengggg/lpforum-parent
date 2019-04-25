@@ -1,19 +1,16 @@
 package com.lpforum.common.abstracts;
 
-import com.google.common.collect.Collections2;
 import com.lpforum.common.annotation.CheckData;
 import com.lpforum.common.enums.EnumErrorCode;
-import com.lpforum.common.enums.EnumErrorType;
 import com.lpforum.common.exception.LpforumException;
-import com.lpforum.common.utils.ExceptionHandlerUtil;
-import com.lpforum.common.utils.StringUtil;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.Serializable;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Collection;
+import java.util.Map;
 
 /**
  *
@@ -27,15 +24,13 @@ abstract public class AbstractBaseData implements Serializable{
 
     public AbstractBaseData(){
         clazz = this.getClass();
-        this.toString();
+        this.checkData();
     }
 
     /**
-     * 当创建对象时调用toString方法校验数据
      * @return
      */
-    @Override
-    public String toString() {
+    public void checkData() {
         try {
             //获取子类的所有域
             Field[] fields = clazz.getDeclaredFields();
@@ -48,7 +43,16 @@ abstract public class AbstractBaseData implements Serializable{
                         Object fieldValue = getFieldValue(field);
                         //校验是否非空
                         checkIsNotEmpty(checkData,fieldValue,field.getName());
-
+                        //校验是否Null
+                        checkIsNotNull(checkData,fieldValue,field.getName());
+                        //校验是否为数值
+                        checkIsNumber(checkData,fieldValue,field.getName());
+                        //校验长度是否符合
+                        checkDataLength(checkData,fieldValue,field.getName());
+                        //校验类型
+                        checkDataType(checkData,fieldValue,field.getName());
+                        //校验正则表达式
+                        checkDataRegular(checkData,fieldValue,field.getName());
                     }
                 }
             }
@@ -58,20 +62,23 @@ abstract public class AbstractBaseData implements Serializable{
             e.printStackTrace();
         } catch (IllegalAccessException e) {
             e.printStackTrace();
+        }catch (LpforumException e){
+            e.printStackTrace();
         }
-        return super.toString();
     }
 
     private Object getFieldValue(Field field) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         if(clazz != null){
             String fieldName = field.getName();
             Method method = clazz.getMethod(getMethod(fieldName));
-            return method.invoke(this);
+            Object invoke = method.invoke(this);
+            return invoke;
         }
+        return null;
     }
 
     private String getMethod(String fieldName) {
-        if(StringUtil.isNotEmpty(fieldName)){
+        if(StringUtils.isNotEmpty(fieldName)){
             StringBuilder methodName = new StringBuilder();
             methodName.append("get");
             if(Character.isUpperCase(fieldName.charAt(0))){
@@ -85,7 +92,6 @@ abstract public class AbstractBaseData implements Serializable{
 
     private  void checkIsNotEmpty(CheckData checkData,Object value,String fieldName){
         boolean mustNotEmpty = checkData.mustNotEmpty();
-
         if(mustNotEmpty){
             //数据不为null
             if (value != null){
@@ -97,14 +103,19 @@ abstract public class AbstractBaseData implements Serializable{
                 }
                 //数据不为null，如果为集合
                 if(value instanceof Collection){
-                    if(){
+                    if(!((Collection)value).isEmpty()){
                         return;
                     }
                 }
                 //数据不为null，如果为map
-
+                if(value instanceof Map){
+                    if(!((Map)value).isEmpty()){
+                        return;
+                    }
+                }
             }
-
+        }else {
+            return;
         }
 
         throw new LpforumException(EnumErrorCode.DATA_IS_EMPTY.getCode(),
@@ -112,6 +123,95 @@ abstract public class AbstractBaseData implements Serializable{
                 EnumErrorCode.DATA_IS_EMPTY.getEnumErrorType());
     }
 
+    private  void checkIsNotNull(CheckData checkData,Object value,String fieldName){
+        boolean mustNotNull = checkData.mustNotNull();
+        if(mustNotNull){
+            if(value != null){
+                return;
+            }
+        }else {
+            return;
+        }
 
+        throw new LpforumException(EnumErrorCode.DATA_IS_NULL.getCode(),
+                fieldName+EnumErrorCode.DATA_IS_NULL.getDescription(),
+                EnumErrorCode.DATA_IS_NULL.getEnumErrorType());
+    }
+
+    private  void checkIsNumber(CheckData checkData,Object value,String fieldName){
+        boolean mustIsNumber = checkData.mustIsNumber();
+        if(mustIsNumber){
+            if(value != null){
+                if(value instanceof String){
+                    if(((String)value).matches("[0-9]*")){
+                        return;
+                    }
+                }
+                throw new LpforumException(EnumErrorCode.DATA_IS_NOT_STRING.getCode(),
+                        fieldName+EnumErrorCode.DATA_IS_NOT_STRING.getDescription(),
+                        EnumErrorCode.DATA_IS_NOT_STRING.getEnumErrorType());
+            }
+        }else {
+            return;
+        }
+
+        throw new LpforumException(EnumErrorCode.DATA_IS_NOT_NUMBER.getCode(),
+                fieldName+EnumErrorCode.DATA_IS_NOT_NUMBER.getDescription(),
+                EnumErrorCode.DATA_IS_NOT_NUMBER.getEnumErrorType());
+    }
+
+    private  void checkDataLength(CheckData checkData,Object value,String fieldName){
+        long length = checkData.length();
+        if(length > 0){
+            if(value != null){
+                if(value instanceof String){
+                    if(((String)value).length() == length){
+                        return;
+                    }
+                }
+                throw new LpforumException(EnumErrorCode.DATA_IS_NOT_STRING.getCode(),
+                        fieldName+EnumErrorCode.DATA_IS_NOT_STRING.getDescription(),
+                        EnumErrorCode.DATA_IS_NOT_STRING.getEnumErrorType());
+            }
+        }else {
+            return;
+        }
+
+        throw new LpforumException(EnumErrorCode.DATA_IS_NOT_MACTH_LENGTH.getCode(),
+                fieldName+EnumErrorCode.DATA_IS_NOT_MACTH_LENGTH.getDescription(),
+                EnumErrorCode.DATA_IS_NOT_MACTH_LENGTH.getEnumErrorType());
+    }
+
+    private  void checkDataType(CheckData checkData,Object value,String fieldName){
+        Class clazz = checkData.clazz();
+        if(!clazz.getName().equals(Void.class.getName())){
+            if(value != null){
+                if(clazz.getName().equals(value.getClass().getName())){
+                    return;
+                }
+            }
+        }
+
+        throw new LpforumException(EnumErrorCode.DATA_IS_NOT_MACTH_TYPE.getCode(),
+                fieldName+EnumErrorCode.DATA_IS_NOT_MACTH_TYPE.getDescription(),
+                EnumErrorCode.DATA_IS_NOT_MACTH_TYPE.getEnumErrorType());
+    }
+
+    private  void checkDataRegular(CheckData checkData,Object value,String fieldName){
+        String regular = checkData.regular();
+        if(value != null){
+            if(value instanceof String){
+                if(((String)value).matches(regular)){
+                    return;
+                }
+            }
+            throw new LpforumException(EnumErrorCode.DATA_IS_NOT_STRING.getCode(),
+                    fieldName+EnumErrorCode.DATA_IS_NOT_STRING.getDescription(),
+                    EnumErrorCode.DATA_IS_NOT_STRING.getEnumErrorType());
+        }
+        throw new LpforumException(EnumErrorCode.DATA_IS_NOT_MACTH_REGULAR.getCode(),
+                fieldName+EnumErrorCode.DATA_IS_NOT_MACTH_REGULAR.getDescription(),
+                EnumErrorCode.DATA_IS_NOT_MACTH_REGULAR.getEnumErrorType());
+    }
 
 }

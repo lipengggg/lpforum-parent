@@ -24,5 +24,11 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.8</version>
         </dependency>
+
+        <dependency>
+            <groupId>net.sf.oval</groupId>
+            <artifactId>oval</artifactId>
+            <version>1.90</version>
+        </dependency>
     </dependencies>
 </project>

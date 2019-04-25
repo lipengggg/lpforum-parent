@@ -9,7 +9,7 @@ import com.lpforum.common.enums.EnumErrorType;
  * @author lipeng
  * @version Id: AbstractExceptionWrapper.java, v 0.1 2019/4/25 16:10 lipeng Exp $$
  */
-public class AbstractExceptionWrapper extends RuntimeException{
+abstract public class AbstractExceptionWrapper extends RuntimeException{
     private static final long serialVersionUID = -7337538045214606656L;
 
     public AbstractExceptionWrapper(ExceptionInfo info) {

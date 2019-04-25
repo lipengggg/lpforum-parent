@@ -2,7 +2,7 @@ package com.lpforum.common.exception;
 
 import com.lpforum.common.abstracts.AbstractExceptionWrapper;
 import com.lpforum.common.enums.EnumErrorType;
-import com.lpforum.common.utils.StringUtil;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  *
@@ -13,7 +13,7 @@ public class LpforumException extends AbstractExceptionWrapper {
     /**  */
     private static final long   serialVersionUID = -4925740763089830032L;
 
-    private static final String TENANT_ID        = ResourceUtil.getValue("tenantId");
+    private static final String TENANT_ID        = "tenantId";
     private static final String MODEL_NAME       = "WEB";
 
     /**
@@ -70,14 +70,14 @@ public class LpforumException extends AbstractExceptionWrapper {
      * @return 异常信息
      */
     public String getMessage() {
-        return StringUtil.isBlank(super.getMessage()) ? this.iErrMessage : super.getMessage();
+        return StringUtils.isBlank(super.getMessage()) ? this.iErrMessage : super.getMessage();
     }
 
     /**
      * @return the iErrMessage 详细信息
      */
     public String getErrMsg() {
-        String errMsg = StringUtil.isBlank(iErrMessage) ? super.getMessage() : iErrMessage;
+        String errMsg = StringUtils.isBlank(iErrMessage) ? super.getMessage() : iErrMessage;
         return errMsg;
     }
 

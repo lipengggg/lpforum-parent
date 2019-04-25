@@ -14,6 +14,7 @@ public enum EnumErrorCode {
     DATA_IS_NOT_MACTH_LENGTH("1004","数据长度不匹配",EnumErrorType.CHECK_DATA_ERR),
     DATA_IS_NOT_MACTH_TYPE("1005","数据类型不匹配",EnumErrorType.CHECK_DATA_ERR),
     DATA_IS_NOT_MACTH_REGULAR("1006","数据与正则表达式不匹配",EnumErrorType.CHECK_DATA_ERR),
+    DATA_IS_NOT_STRING("1007","数据不是字符串",EnumErrorType.CHECK_DATA_ERR),
     ;
 
     /** 状态码 **/
