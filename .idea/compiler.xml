@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lpforum-common" />
+        <module name="lpforum-config-client" />
+        <module name="lpforum-config-server" />
+        <module name="lpforum-consumer-user" />
+        <module name="lpforum-eureka-server" />
+        <module name="lpforum-gateway" />
+        <module name="lpforum-provider-user" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lpforum-common" target="1.5" />
+      <module name="lpforum-config-client" target="1.8" />
+      <module name="lpforum-config-server" target="1.8" />
+      <module name="lpforum-consumer-user" target="1.8" />
+      <module name="lpforum-eureka-server" target="1.8" />
+      <module name="lpforum-gateway" target="1.8" />
+      <module name="lpforum-parent" target="1.5" />
+      <module name="lpforum-provider-user" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

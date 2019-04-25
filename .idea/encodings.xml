@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/lpforum-config-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lpforum-config-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lpforum-consumer-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lpforum-eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lpforum-eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lpforum-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lpforum-provider-user" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/lpforum-common/lpforum-common.iml" filepath="$PROJECT_DIR$/lpforum-common/lpforum-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lpforum-config-client/lpforum-config-client.iml" filepath="$PROJECT_DIR$/lpforum-config-client/lpforum-config-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lpforum-config-server/lpforum-config-server.iml" filepath="$PROJECT_DIR$/lpforum-config-server/lpforum-config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lpforum-consumer-user/lpforum-consumer-user.iml" filepath="$PROJECT_DIR$/lpforum-consumer-user/lpforum-consumer-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lpforum-eureka-server/lpforum-eureka-server.iml" filepath="$PROJECT_DIR$/lpforum-eureka-server/lpforum-eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lpforum-gateway/lpforum-gateway.iml" filepath="$PROJECT_DIR$/lpforum-gateway/lpforum-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lpforum-parent.iml" filepath="$PROJECT_DIR$/lpforum-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lpforum-provider-user/lpforum-provider-user.iml" filepath="$PROJECT_DIR$/lpforum-provider-user/lpforum-provider-user.iml" />
+    </modules>
+  </component>
+</project>
