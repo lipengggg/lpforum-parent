@@ -1,0 +1,21 @@
+#服务端口
+server:
+  port: 8888
+#服务名称
+spring:
+  application:
+    name: lpforum-config-server
+  cloud:
+    config:
+      #配置仓库的分支
+      label: master
+      server:
+        git:
+          #配置git仓库地址
+          uri: https://github.com/forezp/SpringcloudConfig/
+          #配置仓库路径
+          searchPaths: respo
+          #访问git仓库的用户名
+          username:
+          #访问git仓库的用户密码
+          password:

@@ -1,0 +1,15 @@
+#服务端口
+server:
+  port: 8881
+#应用名
+spring:
+  application:
+    name: lpforum-config-client
+  cloud:
+    config:
+      #指明远程仓库的分支
+      label: master
+      #什么环境的配置文件
+      profile: dev
+      #指明配置服务中心的网址
+      uri:  http://localhost:8888/
