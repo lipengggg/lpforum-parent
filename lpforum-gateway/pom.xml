@@ -45,6 +45,13 @@
 			<version>2.1.4.RELEASE</version>
 		</dependency>
 
+		<!--引入ZK-->
+		<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+			<version>3.4.6</version>
+		</dependency>
+
 	</dependencies>
 
 	<dependencyManagement>
