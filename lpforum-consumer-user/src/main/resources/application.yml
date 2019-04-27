@@ -1,31 +1,31 @@
-#·şÎñ¶Ë¿Ú
+#æœåŠ¡ç«¯å£
 server:
-  port: 8004
-#·şÎñÃû³Æ
+  port: 8020
+#æœåŠ¡åç§°
 spring:
   application:
     name: lpforum-consumer-user
-#¹Ø±Õ×ÔÎÒ±£»¤»úÖÆ
+#å…³é—­è‡ªæˆ‘ä¿æŠ¤æœºåˆ¶
 eureka:
   server:
     enable-self-preservation: false
-  #½ûÖ¹·şÎñ±¾ÉíÈ¥²éÕÒ·şÎñ
+  #åˆ°æ³¨å†Œä¸­å¿ƒæ£€ç´¢æœåŠ¡
   client:
     fetch-registry: true
-    #½ûÖ¹·şÎñ×Ô¼º×¢²á×Ô¼º
+    #æ³¨å†Œåˆ°æ³¨å†Œä¸­å¿ƒ
     register-with-eureka: true
-    #eureka×¢²áµØÖ·
+    #eurekaæ³¨å†Œä¸­å¿ƒåœ°å€
     service-url:
       defaultZone: http://localhost:8000/eureka/
-  #eurekaÖ÷»úÓòÃû
+  #eurekaåŸŸå
   instance:
     hostname: localhost
-    #Ó¦ÓÃÁĞ±íµÄ·şÎñ·ÃÎÊµØÖ·¿ÉÒÔ¿´µ½ÕæÊµIP
+    #URLæ˜¯å¦æ˜¾ç¤ºIPåœ°å€
     prefer-ip-address: true
-    #Ò³ÃæÓ¦ÓÃÁĞ±í·şÎñstatus
+    #æœåŠ¡æ˜¾ç¤ºåç§°
     instance-id: lpforum-consumer-user
 
-#Ó¦ÓÃ·şÎñÃèÊöĞÅÏ¢
+#æœåŠ¡è¯¦ç»†ä¿¡æ¯
 info:
   app:
     name: ${spring.application.name}
@@ -35,7 +35,7 @@ info:
     artifactId: $project.artifactId$
     version: $project.version$
 
-#´ò¿ªÈÛ¶ÏÆ÷
+#feignå¼€å¯ç†”æ–­å™¨
 feign:
   hystrix:
     enabled: true

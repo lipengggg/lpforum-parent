@@ -1,31 +1,31 @@
-#·şÎñ¶Ë¿Ú
+#ç«¯å£
 server:
-  port: 8003
-#·şÎñÃû³Æ
+  port: 8010
+#æœåŠ¡åç§°
 spring:
   application:
     name: lpforum-provider-user
-#¹Ø±Õ×ÔÎÒ±£»¤»úÖÆ
+#å…³é—­è‡ªæˆ‘ä¿æŠ¤æœºåˆ¶
 eureka:
   server:
     enable-self-preservation: false
-  #½ûÖ¹·şÎñ±¾ÉíÈ¥²éÕÒ·şÎñ
+  #æä¾›è€…ä¸æ£€ç´¢æœåŠ¡
   client:
     fetch-registry: false
-    #½ûÖ¹·şÎñ×Ô¼º×¢²á×Ô¼º
+    #æä¾›è€…æ³¨å†ŒæœåŠ¡
     register-with-eureka: true
-    #eureka×¢²áµØÖ·
+    #eurekaæ³¨å†Œåœ°å€
     service-url:
       defaultZone: http://localhost:8000/eureka/
-  #eurekaÖ÷»úÓòÃû
+  #eurekaåŸŸå
   instance:
     hostname: localhost
-    #Ó¦ÓÃÁĞ±íµÄ·şÎñ·ÃÎÊµØÖ·¿ÉÒÔ¿´µ½ÕæÊµIP
+    #URLæ˜¯å¦æ˜¾ç¤ºIPåœ°å€
     prefer-ip-address: true
-    #Ò³ÃæÓ¦ÓÃÁĞ±í·şÎñstatus
+    #æœåŠ¡æ³¨å†Œçš„åç§°
     instance-id: lpforum-provider-user
 
-#Ó¦ÓÃ·şÎñÃèÊöĞÅÏ¢
+#æœåŠ¡å¥åº·ä¿¡æ¯
 info:
   app:
     name: ${spring.application.name}
@@ -34,3 +34,6 @@ info:
   build:
     artifactId: $project.artifactId$
     version: $project.version$
+
+#åˆ·æ–°é…ç½®
+endpoints:

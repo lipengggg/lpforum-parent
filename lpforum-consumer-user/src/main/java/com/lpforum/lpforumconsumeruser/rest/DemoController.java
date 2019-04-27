@@ -18,7 +18,7 @@ public class DemoController {
     private DemoService demoService;
 
     @RequestMapping("/getUser")
-    private String getUser(){
+    public String getUser(){
         return demoService.getUser();
     }
 }

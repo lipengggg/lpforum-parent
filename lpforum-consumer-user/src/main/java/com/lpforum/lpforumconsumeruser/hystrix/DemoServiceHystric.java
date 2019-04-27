@@ -1,6 +1,7 @@
 package com.lpforum.lpforumconsumeruser.hystrix;
 
 import com.lpforum.lpforumconsumeruser.service.DemoService;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 /**
@@ -8,7 +9,7 @@ import org.springframework.stereotype.Service;
  * @author lipeng
  * @version Id: DemoServiceHystric.java, v 0.1 2019/4/26 16:14 lipeng Exp $$
  */
-@Service
+@Component
 public class DemoServiceHystric implements DemoService{
 
     @Override

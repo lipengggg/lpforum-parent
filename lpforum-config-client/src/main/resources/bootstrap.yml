@@ -1,31 +1,25 @@
 #服务端口
 server:
-  port: 8040
+  port: 8050
 #服务名称
 spring:
   application:
-    name: lpforum-config-server
+    name: lpforum-config-client
   cloud:
     config:
-      #仓库分支
+      #ָ仓库分支
       label: master
-      server:
-        git:
-          #git仓库URL
-          uri: https://github.com/lipengggg/lpforum-config.git
-          #仓库地址
-          searchPaths: lpforum-config-client
-          #用户名
-          username: 1151449905@qq.com
-          #密码
-          password: LiPeng199210101
+      #获取那个配置
+      profile: dev
+      #ָ访问配置服务的地址
+      uri:  http://localhost:8040/
 eureka:
   #关闭自我保护机制
   server:
     enable-self-preservation: false
-  #配置中心服务不检索服务
+  #配置中心客户端检索服务
   client:
-    fetch-registry: false
+    fetch-registry: true
     #配置中心服务器注册服务
     register-with-eureka: true
     #eureka注册地址
@@ -37,7 +31,7 @@ eureka:
     #URL是否显示IP地址
     prefer-ip-address: true
     #服务注册的名称
-    instance-id: lpforum-config-server
+    instance-id: lpforum-config-client
 
 #服务健康信息
 info:
@@ -48,3 +42,13 @@ info:
   build:
     artifactId: $project.artifactId$
     version: $project.version$
+
+#关闭访问安全认证
+management:
+  security:
+    enabled: false
+#正常默认端点是health和info，没有refresh
+  endpoints:
+    web:
+      exposure:
+        include: health, info, refresh

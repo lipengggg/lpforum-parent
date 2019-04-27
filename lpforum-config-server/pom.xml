@@ -25,6 +25,18 @@
 			<artifactId>spring-cloud-config-server</artifactId>
 		</dependency>
 
+		<!--eureka客户端-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+
+		<!--查看服务健康状态页面-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+
 		<!--web工程依赖-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

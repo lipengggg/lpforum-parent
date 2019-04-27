@@ -408,7 +408,7 @@ public class UriKeyResolver  implements KeyResolver {
 #Eureka+Hystrix+Feign
 Feign继承了Hystrix和Ribbon功能，Eureka消费客户端实现其功能如下
 #Config
-获取配置映射
+##获取配置映射
 ```
 /{application}/{profile}[/{label}]
 /{application}-{profile}.yml
@@ -416,6 +416,38 @@ Feign继承了Hystrix和Ribbon功能，Eureka消费客户端实现其功能如�
 /{application}-{profile}.properties
 /{label}/{application}-{profile}.properties
 ```
+##注意事项：
+1、配置客户端配置文件需要为bootstrap.yml，否则默认获取8888获取不到配置
+2、配置服务路径配置问题，必须仓库URL，后仓库内部路径
+3、路径配置映射
+##配置刷新
+让配置支持刷新要依赖监控功能
+```
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+```
+###再添加注解@RefreshScope
+访问：http://localhost:8050/actuator/refresh
+###添加配置
+```
+
+#关闭访问安全认证
+management:
+  security:
+    enabled: false
+#正常默认端点是health和info，没有refresh
+  endpoints:
+    web:
+      exposure:
+        include: health, info, refresh
+```
+###批量刷新配置
+
+
+
+
 #Hystrix Dashboard
 Hystrix Dashboard是作为断路器状态的一个组件，提供了数据监控和友好的图形化界面。
 #Hystrix Turbine
