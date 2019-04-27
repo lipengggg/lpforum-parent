@@ -14,7 +14,7 @@
 	<artifactId>lpforum-config-client</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>lpforum-config-client</name>
-	<description>lpforum-config-clientt</description>
+	<description>lpforum-config-client</description>
 
 	<dependencies>
 		<dependency>

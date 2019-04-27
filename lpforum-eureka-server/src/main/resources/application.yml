@@ -1,24 +1,3 @@
-#服务端口
-server:
-  port: 8000
-#应用名称
 spring:
-  application:
-    name: lpforum-eureka-server
-eureka:
-  server:
-    #关闭自我保护机制
-    enable-self-preservation: false
-  client:
-    #服务本身不检索服务
-    fetch-registry: false
-    #服务本身不注册服务
-    register-with-eureka: false
-    #eureka地址
-    service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-  instance:
-    #eureka域名
-    hostname: localhost
-    #页面status
-    instance-id: lpforum-eureka-server
+  profiles:
+    active: dev

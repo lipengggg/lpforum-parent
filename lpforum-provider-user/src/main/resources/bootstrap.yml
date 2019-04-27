@@ -1,5 +1,10 @@
-#服务名称
 spring:
+  #rabbitmq配置
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
   cloud:
     config:
       #ָ仓库分支

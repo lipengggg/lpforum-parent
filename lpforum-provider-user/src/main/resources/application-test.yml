@@ -1,0 +1,36 @@
+#端口
+server:
+  port: 8010
+#服务名称
+spring:
+  application:
+    name: lpforum-provider-user
+#关闭自我保护机制
+eureka:
+  server:
+    enable-self-preservation: false
+  #提供者不检索服务,但是检索配置
+  client:
+    fetch-registry: true
+    #提供者注册服务
+    register-with-eureka: true
+    #eureka注册地址
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+  #eureka域名
+  instance:
+    hostname: localhost
+    #URL是否显示IP地址
+    prefer-ip-address: true
+    #服务注册的名称
+    instance-id: lpforum-provider-user
+
+#服务健康信息
+info:
+  app:
+    name: ${spring.application.name}
+  company:
+    name: www.wdph.com
+  build:
+    artifactId: $project.artifactId$
+    version: $project.version$

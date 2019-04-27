@@ -1,0 +1,68 @@
+#服务端口
+server:
+  port: 8040
+#服务名称
+spring:
+  application:
+    name: lpforum-config-server
+  cloud:
+    config:
+      #仓库分支
+      label: master
+      server:
+        git:
+          #git仓库URL
+          uri: https://github.com/lipengggg/lpforum-config.git
+          #仓库地址
+          #searchPaths: lpforum-config-client
+          #修改为检索配置文件的路径
+          search-paths: /*/*/*,/*
+          #用户名
+          username: 1151449905@qq.com
+          #密码
+          password: LiPeng199210101
+  #rabbitmq配置
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+eureka:
+  #关闭自我保护机制
+  server:
+    enable-self-preservation: false
+  #配置中心服务不检索服务
+  client:
+    fetch-registry: false
+    #配置中心服务器注册服务
+    register-with-eureka: true
+    #eureka注册地址
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+  #eureka域名
+  instance:
+    hostname: localhost
+    #URL是否显示IP地址
+    prefer-ip-address: true
+    #服务注册的名称
+    instance-id: lpforum-config-server
+
+#服务健康信息
+info:
+  app:
+    name: ${spring.application.name}
+  company:
+    name: www.wdph.com
+  build:
+    artifactId: $project.artifactId$
+    version: $project.version$
+#关闭安全访问接口限制
+management:
+  security:
+    enabled: false
+
+#是否开启基本的鉴权，默认为true，关闭鉴权
+security:
+  basic:
+    enabled: false
+

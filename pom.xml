@@ -32,15 +32,14 @@
         <java.version>1.8</java.version>
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
         <hystrix.version>1.4.6.RELEASE</hystrix.version>
-        <druid.version>1.1.1</druid.version>
+        <druid.version>1.1.10</druid.version>
         <redis.version>2.1.4.RELEASE</redis.version>
         <zookeeper.version>3.4.6</zookeeper.version>
         <guava.version>18.0</guava.version>
         <commons-lang3.version>3.8</commons-lang3.version>
         <oval.version>1.90</oval.version>
+        <log4j.version>1.2.17</log4j.version>
         <commons-codec.version>RELEASE</commons-codec.version>
-
-
     </properties>
 
     <dependencyManagement>
@@ -64,7 +63,7 @@
             <!--德鲁伊数据源-->
             <dependency>
                 <groupId>com.alibaba</groupId>
-                <artifactId>druid</artifactId>
+                <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${druid.version}</version>
             </dependency>
 
@@ -112,6 +111,14 @@
 
         </dependencies>
     </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
