@@ -14,11 +14,19 @@ spring:
           #git仓库URL
           uri: https://github.com/lipengggg/lpforum-config.git
           #仓库地址
-          searchPaths: lpforum-config-client
+          #searchPaths: lpforum-config-client
+          #修改为检索配置文件的路径
+          search-paths: /*/*/*,/*
           #用户名
           username: 1151449905@qq.com
           #密码
           password: LiPeng199210101
+  #rabbitmq配置
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 eureka:
   #关闭自我保护机制
   server:
@@ -48,3 +56,13 @@ info:
   build:
     artifactId: $project.artifactId$
     version: $project.version$
+#关闭安全访问接口限制
+management:
+  security:
+    enabled: false
+
+#是否开启基本的鉴权，默认为true，关闭鉴权
+security:
+  basic:
+    enabled: false
+

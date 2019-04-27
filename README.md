@@ -443,7 +443,7 @@ management:
       exposure:
         include: health, info, refresh
 ```
-###批量刷新配置
+###批量自动刷新配置
 
 
 
