@@ -7,10 +7,10 @@ import reactor.core.publisher.Mono;
 /**
  *
  * @author lipeng
- * @version Id: FallBackController.java, v 0.1 2019/4/26 15:33 lipeng Exp $$
+ * @version Id: FallBackHystrix.java, v 0.1 2019/4/26 15:33 lipeng Exp $$
  */
 @RestController
-public class FallBackController {
+public class FallBackHystrix {
 
     @RequestMapping("/fallback")
     public Mono<String> fallback() {

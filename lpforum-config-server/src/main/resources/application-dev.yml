@@ -22,11 +22,11 @@ spring:
           #密码
           password: LiPeng199210101
   #rabbitmq配置
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
+  #rabbitmq:
+    #host: localhost
+    #port: 5672
+    #username: guest
+    #password: guest
 eureka:
   #关闭自我保护机制
   server:
