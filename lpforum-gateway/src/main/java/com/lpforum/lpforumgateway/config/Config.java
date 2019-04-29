@@ -10,7 +10,6 @@ import org.springframework.context.annotation.Configuration;
  * @author lipeng
  * @version Id: Config.java, v 0.1 2019/4/28 10:35 lipeng Exp $$
  */
-@Configuration
 public class Config {
 
     /**
@@ -26,9 +25,6 @@ public class Config {
     @Bean
     public RouteLocator getRoutes(RouteLocatorBuilder builder) {
         String httpUri = "http://httpbin.org:80";
-
-        RouteLocatorBuilder.Builder routes = builder.routes();
-
 
         return builder.routes()
                 .route(p -> p

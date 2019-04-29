@@ -13,14 +13,15 @@ import reactor.core.publisher.Mono;
  * @version Id: DemoController.java, v 0.1 2019/4/24 17:11 lipeng Exp $$
  */
 @RestController
+@RequestMapping("/gateway")
 public class DemoController {
 
     /**
      * 服务熔断执行
      * @return
      */
-    @RequestMapping("/fallback")
-    public Mono<String> fallback(){
-        return Mono.just("fallback");
+    @RequestMapping("/hello")
+    public String hello(){
+        return "Hello";
     }
 }

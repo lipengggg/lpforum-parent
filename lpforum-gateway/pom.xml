@@ -26,12 +26,6 @@
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 
-		<!--web工程启动需要依赖-->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-
 		<!--监控依赖-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -44,10 +38,10 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!--引入熔断器-->
+		<!--springclooud注解EnableCircuitBreaker要引入断路器依赖，而不是spring-cloud-starter-hystrix-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-hystrix</artifactId>
+			<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
 		</dependency>
 
 		<!--引入限流需要使用的redis-->
