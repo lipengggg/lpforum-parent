@@ -1,10 +1,6 @@
 #服务端口
 server:
   port: 8000
-#应用名称
-spring:
-  application:
-    name: lpforum-eureka-server
 eureka:
   server:
     #关闭自我保护机制

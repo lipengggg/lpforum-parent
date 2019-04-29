@@ -1,10 +1,9 @@
 #服务端口
 server:
   port: 8040
-#服务名称
+
+###########springcloud配置############
 spring:
-  application:
-    name: lpforum-config-server
   cloud:
     config:
       #仓库分支
@@ -20,7 +19,7 @@ spring:
           #用户名
           username: 1151449905@qq.com
           #密码
-          password: LiPeng199210101
+          password: '{cipher}ad5f275cf53e19c25a0340937a5020450856f01c6bdbaeb02340249684e3313f'
   #rabbitmq配置
   #rabbitmq:
     #host: localhost

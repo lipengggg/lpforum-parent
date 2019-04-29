@@ -1,0 +1,8 @@
+#设置加密的秘钥
+encrypt:
+  key: LiPeng199210101
+
+#服务名称
+spring:
+  application:
+    name: lpforum-config-server
