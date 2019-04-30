@@ -57,9 +57,9 @@
 		</dependency>
 
 		<!--swagger接口文档生成整合-->
-		<dependency>
+<!--		<dependency>
 			<groupId>com.spring4all</groupId>
 			<artifactId>swagger-spring-boot-starter</artifactId>
-		</dependency>
+		</dependency>-->
 	</dependencies>
 </project>
