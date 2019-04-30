@@ -453,10 +453,16 @@ Hystrix Dashboard是作为断路器状态的一个组件，提供了数据监控
 #Hystrix Turbine
 看单个的Hystrix Dashboard的数据并没有什么多大的价值，要想看这个系统的Hystrix Dashboard数据就需要用到Hystrix Turbine。Hystrix Turbine将每个服务Hystrix Dashboard数据进行了整合。Hystrix Turbine的使用非常简单，只需要引入相应的依赖和加上注解和配置就可以了。
 #zuul原理
+#链路追踪
+#日志收集
+#整合Swagger
+#zuual重试
 
 
 
 
 ``
-关注资源：https://blog.csdn.net/forezp/article/details/70148833
+关注资源：
+https://blog.csdn.net/forezp/article/details/70148833
+http://blog.didispace.com/spring-cloud-learning/
 ``

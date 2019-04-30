@@ -76,6 +76,31 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
 		</dependency>-->
+
+		<!--引入mybatis-->
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.mybatis.generator</groupId>
+				<artifactId>mybatis-generator-maven-plugin</artifactId>
+				<dependencies>
+					<dependency>
+						<groupId>mysql</groupId>
+						<artifactId>mysql-connector-java</artifactId>
+					</dependency>
+				</dependencies>
+				<configuration>
+					<configurationFile>src/main/resources/mybatis/generatorConfig.xml</configurationFile>
+					<overwrite>true</overwrite>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>

@@ -56,5 +56,10 @@
 			<artifactId>zookeeper</artifactId>
 		</dependency>
 
+		<!--swagger接口文档生成整合-->
+		<dependency>
+			<groupId>com.spring4all</groupId>
+			<artifactId>swagger-spring-boot-starter</artifactId>
+		</dependency>
 	</dependencies>
 </project>

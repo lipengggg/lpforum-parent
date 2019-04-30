@@ -41,7 +41,10 @@
         <log4j.version>1.2.17</log4j.version>
         <sleuth.version>2.1.1.RELEASE</sleuth.version>
         <feign-form.version>3.0.3</feign-form.version>
-        <logback.version>4.6</logback.version>
+        <mybatis.version>2.0.1</mybatis.version>
+        <mybatis-generator.version>1.3.6</mybatis-generator.version>
+        <!--<logback.version>4.6</logback.version>-->
+        <swagger.version>1.7.0.RELEASE</swagger.version>
         <commons-fileupload.version>1.3.3</commons-fileupload.version>
         <commons-codec.version>RELEASE</commons-codec.version>
     </properties>
@@ -132,6 +135,7 @@
                 <version>${commons-fileupload.version}</version>
             </dependency>
 
+            <!--链路追踪-->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-sleuth</artifactId>
@@ -142,6 +146,27 @@
                 <groupId>log4j</groupId>
                 <artifactId>log4j</artifactId>
                 <version>${log4j.version}</version>
+            </dependency>
+
+            <!--swagger接口文档生成整合-->
+<!--            <dependency>
+                <groupId>com.spring4all</groupId>
+                <artifactId>swagger-spring-boot-starter</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>-->
+
+            <!--引入mybatis-->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+
+            <!--集成generator-->
+            <dependency>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-core</artifactId>
+                <version>${mybatis-generator.version}</version>
             </dependency>
 
         </dependencies>
