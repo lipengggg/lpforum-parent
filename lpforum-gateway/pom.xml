@@ -5,7 +5,7 @@
 
 	<groupId>com.lpforum</groupId>
 	<artifactId>lpforum-gateway</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0-SNAPSHOT</version>
 	<name>lpforum-gateway</name>
 	<description>lpforum-gateway</description>
 
@@ -54,6 +54,13 @@
 		<dependency>
 			<groupId>org.apache.zookeeper</groupId>
 			<artifactId>zookeeper</artifactId>
+		</dependency>
+
+		<!--引入common-->
+		<dependency>
+			<groupId>com.lpforum</groupId>
+			<artifactId>lpforum-commom</artifactId>
+			<version>${project.version}</version>
 		</dependency>
 
 		<!--swagger接口文档生成整合-->

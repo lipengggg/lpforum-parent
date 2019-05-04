@@ -1,12 +1,9 @@
 #端口
 server:
   port: 8010
+
 #服务名称
 spring:
-  datasource:
-    druid:
-      connection-properties:
-
   application:
     name: lpforum-provider-user
 #关闭自我保护机制

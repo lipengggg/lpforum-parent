@@ -30,6 +30,7 @@
     <!--版本管理-->
     <properties>
         <java.version>1.8</java.version>
+        <project.version>1.0-SNAPSHOT</project.version>
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
         <hystrix.version>1.4.6.RELEASE</hystrix.version>
         <druid.version>1.1.10</druid.version>
@@ -42,6 +43,7 @@
         <sleuth.version>2.1.1.RELEASE</sleuth.version>
         <feign-form.version>3.0.3</feign-form.version>
         <mybatis.version>2.0.1</mybatis.version>
+        <fastjson.version>1.2.57</fastjson.version>
         <mybatis-generator.version>1.3.6</mybatis-generator.version>
         <!--<logback.version>4.6</logback.version>-->
         <swagger.version>1.7.0.RELEASE</swagger.version>
@@ -51,6 +53,13 @@
 
     <dependencyManagement>
         <dependencies>
+            <!--fastjson-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
             <!--springcloud-->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>

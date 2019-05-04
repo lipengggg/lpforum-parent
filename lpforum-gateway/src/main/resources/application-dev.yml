@@ -8,11 +8,15 @@ spring:
     name: lpforum-gateway
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
       routes:
       - id: path_route
-        uri: http://${eureka.instance.hostname}:${server.port}
+        uri: lb://lpforum-consumer-user
         predicates:
-        - Path=/gateway/**
+        - Path=/lpforum/**
         filters:
         - AddRequestHeader=X-Request-Foo, Bar
 

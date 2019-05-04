@@ -1,20 +1,26 @@
 package com.lpforum.lpforumprovideruser.rest;
 
-import org.springframework.beans.factory.annotation.Value;
+import com.lpforum.common.annotation.log.SystemLog;
+import com.lpforum.lpforumprovideruser.entity.User;
+import com.lpforum.lpforumprovideruser.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 @RefreshScope
 public class DemoController {
 
-    @Value("${spring.datasource.druid.initialSize}")
-    private int initialSize;
+    @Autowired
+    private UserService userService;
 
     @RequestMapping(value = "/getUser",method = RequestMethod.GET)
-    public String getUser(){
-        return initialSize+"";
+    @SystemLog("获取用户列表")
+    public List<User> getUser(){
+        return userService.getList();
     }
 }

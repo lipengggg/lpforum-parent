@@ -37,6 +37,7 @@ public class LogFilter implements GatewayFilter,Ordered{
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
+        System.out.println("你好啊");
         return null;
     }
 }

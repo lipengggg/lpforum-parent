@@ -12,7 +12,7 @@
 
 	<groupId>com.ylsdd.lpforum</groupId>
 	<artifactId>lpforum-config-server</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0-SNAPSHOT</version>
 	<name>lpforum-config-server</name>
 	<description>lpforum-config-server</description>
 
