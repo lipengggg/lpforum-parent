@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="USER_HOME" value="/data/hsjry/logs/OUTWEB/" />
+    <property name="FILE_NAME" value="OUTWEB" />
+    
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">  
+	    <encoder>  
+	      <!-- <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg %n</pattern> -->  
+           <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %thread %logger{35} %level - %X{TINY_TRACE_CONTEXT:-} %msg %n</pattern>
+          <!-- <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%cyan(%-38logger{0})] %highlight(%level) - %highlight(%msg) %n</pattern> -->
+	    </encoder>
+  	</appender> 
+    
+    <!-- DEBUG -->
+    <appender name="LOG-DEBUG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${USER_HOME}${FILE_NAME}-DEBUG.log</File>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>DEBUG</level>
+            <OnMatch>ACCEPT</OnMatch>
+            <OnMismatch>DENY</OnMismatch>
+        </filter>
+        <append>true</append>
+        <Encoding>UTF-8</Encoding>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${USER_HOME}${FILE_NAME}-%d{yyyy-MM-dd}-DEBUG.log</FileNamePattern>
+            <!-- 超过MaxHistory之前的删除 -->
+            <MaxHistory>1</MaxHistory>
+        </rollingPolicy>
+        <encoder>  
+      		<!-- <pattern>%-4relative [%thread] %-5level %logger{35} - %msg %n</pattern> -->  
+      		<pattern>%thread %logger{35} %level - %msg %n</pattern>
+    	</encoder>
+        <layout>
+            <!-- <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{96}[%line] - %msg%n</Pattern> -->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %thread %logger{96}[%line] %level - %msg %n</pattern>
+        </layout>
+    </appender>
+
+    <!-- INFO -->
+    <appender name="LOG-INFO" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${USER_HOME}${FILE_NAME}-INFO.log</File>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <OnMatch>ACCEPT</OnMatch>
+            <OnMismatch>DENY</OnMismatch>
+        </filter>
+        <append>true</append>
+        <Encoding>UTF-8</Encoding>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${USER_HOME}${FILE_NAME}-%d{yyyy-MM-dd}-INFO.log</FileNamePattern>
+            <!-- 超过MaxHistory之前的删除 -->
+            <MaxHistory>1</MaxHistory>
+        </rollingPolicy>
+        <encoder>  
+      		<!-- <pattern>%-4relative [%thread] %-5level %logger{35} - %msg %n</pattern> -->  
+      		<pattern>%thread %logger{35} %level - %msg %n</pattern>
+    	</encoder>
+        <layout>
+            <!-- <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{96}[%line] - %msg%n</Pattern> -->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %thread %logger{96}[%line] %level - %msg %n</pattern>
+        </layout>
+    </appender>
+
+    <!-- WARN -->
+    <appender name="LOG-WARN" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${USER_HOME}${FILE_NAME}-WARN.log</File>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>WARN</level>
+            <OnMatch>ACCEPT</OnMatch>
+            <OnMismatch>DENY</OnMismatch>
+        </filter>
+        <append>true</append>
+        <Encoding>UTF-8</Encoding>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${USER_HOME}${FILE_NAME}-%d{yyyy-MM-dd}-WARN.log.zip</FileNamePattern>
+            <!-- 超过MaxHistory之前的删除 -->
+            <MaxHistory>1</MaxHistory>
+        </rollingPolicy>
+        <encoder>  
+      		<!-- <pattern>%-4relative [%thread] %-5level %logger{35} - %msg %n</pattern> -->  
+      		<pattern>%thread %logger{35} %level - %msg %n</pattern>
+    	</encoder>
+        <layout>
+            <!-- <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{96}[%line] - %msg%n</Pattern> -->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %thread %logger{96}[%line] %level - %msg %n</pattern>
+        </layout>
+    </appender>
+
+    <!-- ERROR -->
+    <appender name="LOG-ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${USER_HOME}${FILE_NAME}-ERROR.log</File>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <OnMatch>ACCEPT</OnMatch>
+            <OnMismatch>DENY</OnMismatch>
+        </filter>
+        <append>true</append>
+        <Encoding>UTF-8</Encoding>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${USER_HOME}${FILE_NAME}-%d{yyyy-MM-dd}-ERROR.log.zip</FileNamePattern>
+            <!-- 超过MaxHistory之前的删除 -->
+            <MaxHistory>30</MaxHistory>
+        </rollingPolicy>
+        <encoder>  
+      		<!-- <pattern>%-4relative [%thread] %-5level %logger{35} - %msg %n</pattern> -->  
+      		<pattern>%thread %logger{35} %level - %msg %n</pattern>
+    	</encoder>
+        <layout>
+            <!-- <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{96}[%line] - %msg%n</Pattern> -->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %thread %logger{96}[%line] %level - %msg %n</pattern>
+        </layout>
+    </appender>
+
+    <root level="INFO">
+        <!-- <appender-ref ref="LOG-DEBUG" /> -->
+        <appender-ref ref="LOG-INFO" />
+        <appender-ref ref="LOG-WARN" />
+        <appender-ref ref="LOG-ERROR" />
+        <appender-ref ref="STDOUT" /> 
+    </root>
+    
+	<logger name="com.hsjry" level="INFO" />
+    <logger name="org.apache" level="WARN" />
+    <logger name="org.springframework" level="WARN" />
+    <logger name="org.quartz" level="WARN" />
+    <logger name="com.opensymphony" level="ERROR" />
+    <logger name="java.sql.Connection" level="WARN" />
+    <logger name="java.sql.PreparedStatement" level="WARN" />
+    <logger name="java.sql.ResultSet" level="WARN" />
+    <!-- 输出调用信息，其他信息不输出，看见就烦  -->
+    <logger name="org.tinygroup.cepcoremutiremoteimpl" level="ERROR" />
+    <logger name="org.tinygroup.cepcoreimpl" level="ERROR" />
+    <logger name="org.tinygroup.nettyremote" level="ERROR" />
+    <logger name="org.tinygroup.cepcoremutiremoteimpl.RemoteEventProcessor" level="info" />
+</configuration>
